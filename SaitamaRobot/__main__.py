@@ -80,7 +80,7 @@ And the following:
 SAITAMA_IMG = "https://telegra.ph/file/2a7099bdceb6ebf81f391.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
-Ai_bot is hosted on one of Heroku's free servers then your donation very helpful to buy Rdp)."""
+Ai_bot is hosted on one of Heroku's free servers then your donation very helpful to buy Rdp EZcash 0740856411)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
