@@ -53,8 +53,8 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 Hi {}, my name is {}! 
 I am a powerfull group management bot.
-Build by @ImJanindu, I specialize in managing groups.
-You can find my list of available commands with /help.
+Build by @D_bot_Ai I specialize in managing groups.
+vailable commands /help.
 """
 
 HELP_STRINGS = """
@@ -67,8 +67,8 @@ the things I can help you with.
  • /help <module name>: PM's you info about that module.
  • /donate: information on how to donate!
  • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
+   in PM: will send you your settings for all supported modules.
+ • in a group: will redirect you to pm, with all that chat's settings.
 
 
 {}
@@ -77,12 +77,12 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/c77d80b7e21e3ab7c4a24.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/d0ca8d059e042d968a416.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
-Senku is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+Senku is hosted on one of Heroku's Servers and need to \
+buy a server RDP i need your help
+There are two ways of supporting him; [EZcash 0740856411](t.me/Danuma_admin_bot), or [Contact](t.me/Danuma_admin_bot)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -205,21 +205,21 @@ def start(update: Update, context: CallbackContext):
                                 context.bot.username)),
                          InlineKeyboardButton(
                              text=" ✅ Updates ",
-                             url="https://t.me/Infinity_BOTs")
+                             url="https://t.me/D_bot_Ai")
                      ],
                      [
                         InlineKeyboardButton(
                             text=" ❓ Help ",
-                            url="https://t.me/JE_NarutoRobot?start=help"),
+                            url="https://t.me/Danuma_admin_bot"),
                          InlineKeyboardButton(
                             text=" 👨‍💻 Developer ",
-                             url="https://t.me/ImJanindu")        
+                             url="https://t.me/Danuma_admin_bot")        
                        
                      ],
                      [
                         InlineKeyboardButton(
                              text=" ❤️ Source Code ",
-                             url="https://t.me/Infinity_BOTs")
+                             url="https://t.me/@D_bot_Ai")
                     
                     ]]))
     else:
@@ -497,7 +497,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1082702383 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
