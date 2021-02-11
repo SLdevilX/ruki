@@ -51,9 +51,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am a powerfull group management bot.
-Build by @D_bot_Ai I specialize in managing groups.
+👽 {}, 𝚈𝚘𝚞 𝚔𝚗𝚘𝚠 𝚖𝚎? 𝙸 𝚊𝚖 {}! 
+𝙵𝚎𝚎𝚕 𝙶𝚘𝚍 𝚖𝚘𝚘𝚍 𝚒𝚗 𝚢𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙
+𝚆𝚑𝚘 𝚖𝚊𝚔𝚎𝚍 𝚖𝚎? 
+✔︎𝚃𝚘𝚞𝚌𝚑 [𝙷𝚎𝚛𝚎](lasiya.ml) 𝚝𝚘 𝚔𝚗𝚘𝚠✰
 vailable commands /help.
 """
 
@@ -77,7 +78,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/61a3ba95165ff5e8c7cc1.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/51638ee67668c158a3313.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
 Senku is hosted on one of Heroku's Servers and need to \
@@ -200,25 +201,26 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text=" ➕ Add Me ",
+                            text=" 👽 Add Me 👽",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
-                         InlineKeyboardButton(
-                             text=" ✅ Updates ",
-                             url="https://t.me/D_bot_Ai")
+                         
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ❓ Help ",
-                            url="https://t.me/Danuma_admin_bot"),
+                            text=" 🛸Main Group🛸 ",
+                            url="https://t.me/danuma01"),
                          InlineKeyboardButton(
-                            text=" 👨‍💻 Developer ",
-                             url="https://t.me/Danuma_admin_bot")        
+                            text=" 👨‍💻 Developer "👩‍💻,
+                             url="https://lasiya.ml"),
+                          inlinekeyboardbutton(
+                             text=" ✈️Updates Channel✈️",
+                             url="https://t.me/Dbotai")
                        
                      ],
                      [
                         InlineKeyboardButton(
-                             text=" ❤️ Source Code ",
+                             text=" 🛶 Report bugs🛶 ",
                              url="https://t.me/@D_bot_Ai")
                     
                     ]]))
@@ -301,7 +303,7 @@ def help_button(update, context):
         elif back_match:
             query.message.edit_text(
                 text=HELP_STRINGS,
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.MARKDOWN, 
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(0, HELPABLE, "help")))
 
