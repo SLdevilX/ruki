@@ -211,7 +211,7 @@ def start(update: Update, context: CallbackContext):
                             text=" 🛸Main Group🛸 ",
                             url="https://t.me/danuma01"),
                          InlineKeyboardButton(
-                            text=" 👨‍💻 Developer "👩‍💻,
+                            text=" 👨‍💻 Developer 👩‍💻",
                              url="https://lasiya.ml"),
                           inlinekeyboardbutton(
                              text=" ✈️Updates Channel✈️",
