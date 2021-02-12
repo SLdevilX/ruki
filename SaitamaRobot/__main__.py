@@ -204,7 +204,7 @@ def start(update: Update, context: CallbackContext):
 
                         InlineKeyboardButton(
 
-                            text=" ➕ Add Me ",
+                            text=" 🤝𝑨𝒅𝒅 𝒎𝒆 𝒕𝒐 𝒚𝒐𝒖𝒓 𝒈𝒓𝒐𝒖𝒑🤙 ",
 
                             url="t.me/{}?startgroup=true".format(
 
@@ -228,9 +228,9 @@ def start(update: Update, context: CallbackContext):
 
                          InlineKeyboardButton(
 
-                            text=" 👨‍💻 Developer ",
+                            text=" 🧪𝑫𝒆𝒗 & 𝑶𝒕𝒉𝒆𝒓 𝑩𝒐𝒕𝒔🧪 ",
 
-                             url="https://t.me/Danuma_admin_bot")        
+                             url="https://lasiya.ml")        
 
                        
 
