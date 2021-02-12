@@ -199,31 +199,54 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
+
                     [[
+
                         InlineKeyboardButton(
-                            text=" 👽 Add Me 👽",
+
+                            text=" ➕ Add Me ",
+
                             url="t.me/{}?startgroup=true".format(
+
                                 context.bot.username)),
-                         
-                     ],
-                     [
-                        InlineKeyboardButton(
-                            text=" 🛸Main Group🛸 ",
-                            url="https://t.me/danuma01"),
+
                          InlineKeyboardButton(
-                            text=" 👨‍💻 Developer 👩‍💻",
-                             url="https://lasiya.ml"),
-                          inlinekeyboardbutton(
-                             text=" ✈️Updates Channel✈️",
-                             url="https://t.me/Dbotai")
-                       
+
+                             text=" ✅ Updates ",
+
+                             url="https://t.me/D_bot_Ai")
+
                      ],
+
                      [
+
                         InlineKeyboardButton(
-                             text=" 🛶 Report bugs🛶 ",
+
+                            text=" ❓ Help ",
+
+                            url="https://t.me/Danuma_admin_bot"),
+
+                         InlineKeyboardButton(
+
+                            text=" 👨‍💻 Developer ",
+
+                             url="https://t.me/Danuma_admin_bot")        
+
+                       
+
+                     ],
+
+                     [
+
+                        InlineKeyboardButton(
+
+                             text=" ❤️ Source Code ",
+
                              url="https://t.me/@D_bot_Ai")
-                    
-                    ]]))
+
+
+
+                  ]]))
     else:
         update.effective_message.reply_text(
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
