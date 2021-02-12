@@ -59,17 +59,17 @@ vailable commands /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+✰𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚃𝚘 *{}*.
 I help admins to manage their groups! Have a look at the following for an idea of some of \
 the things I can help you with.
 
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
-   in PM: will send you your settings for all supported modules.
- • in a group: will redirect you to pm, with all that chat's settings.
+*Main Commands :* [🤖](https://telegra.ph/file/2f6d0529836dab676c965.jpg)
+
+✓ /start : 𝑆𝑡𝑎𝑟𝑡 𝑚𝑒 | 𝑐ℎ𝑒𝑘 𝑎𝑙𝑖𝑣𝑒
+
+✓ /help : 𝐺𝑒𝑡 𝑡ℎ𝑖𝑠 𝑚𝑒𝑛𝑢
+
+✓ /donate : 𝐻𝑒𝑙𝑝 𝑡𝑜 𝐷𝑎𝑛𝑢𝑚𝑎 𝑝𝑟𝑜𝑗𝑒𝑐𝑡
 
 
 {}
@@ -212,9 +212,9 @@ def start(update: Update, context: CallbackContext):
 
                          InlineKeyboardButton(
 
-                             text=" ✅ Updates ",
+                             text=" 🛶 Updates Chnnle 🛶 ",
 
-                             url="https://t.me/D_bot_Ai")
+                             url="https://t.me/Dbotai")
 
                      ],
 
@@ -222,7 +222,8 @@ def start(update: Update, context: CallbackContext):
 
                         InlineKeyboardButton(
 
-                            text=" ❓ Help ",
+                            text=" ✈️Main Group✈️
+",
 
                             url="https://t.me/Danuma_admin_bot"),
 
@@ -240,9 +241,9 @@ def start(update: Update, context: CallbackContext):
 
                         InlineKeyboardButton(
 
-                             text=" ❤️ Source Code ",
+                             text=" ❤️ Report Bugs ❤️ ",
 
-                             url="https://t.me/@D_bot_Ai")
+                             url="https://t.me/Danuma_admin_bot")
 
 
 
@@ -296,7 +297,7 @@ def help_button(update, context):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = ("Here is the help for the *{}* module:\n".format(
+            text = ("All secrets  *{}* module:\n".format(
                 HELPABLE[module].__mod_name__) + HELPABLE[module].__help__)
             query.message.edit_text(
                 text=text,
