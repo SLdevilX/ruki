@@ -77,7 +77,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/d0ca8d059e042d968a416.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/51638ee67668c158a3313.jpg"
 
 DONATE_STRING = """Hey, [glad](https://telegra.ph/file/d6112e493fd6092ce1c00.jpg) to hear you want to donate!
 Senku is hosted on one of Heroku's Servers and need to \
