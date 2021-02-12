@@ -223,10 +223,12 @@ def start(update: Update, context: CallbackContext):
                     
                     ]]))
     else:
-        update.effective_message.reply_text(
+        update.effective_message.reply_photo(
+
+                SAITAMA_IMG(
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
             .format(uptime),
-            parse_mode=ParseMode.HTML)
+            parse_mode=ParseMode.HTML))
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
@@ -285,6 +287,7 @@ def help_button(update, context):
         elif prev_match:
             curr_page = int(prev_match.group(1))
             query.message.edit_text(
+              photo = SAITAMA_IMG,
                 text=HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
